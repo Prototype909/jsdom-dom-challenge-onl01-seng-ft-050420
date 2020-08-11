@@ -17,8 +17,8 @@ function decrementCounter() {
 
 function incrementCounter() {
     let result = parseInt(counter.innerText);
-    result++; 
-    counter.innerText = result; 
+    result++;
+    counter.innerText = result;
 };
 
 function pauseCounter() {
