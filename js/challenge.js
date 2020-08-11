@@ -14,3 +14,9 @@ function decrementCounter() {
     result--;
     counter.innerText = result;
 };
+
+function incrementCounter() {
+    let result = parseInt(counter.innerText);
+    result++;
+    counter.innerText = result;
+};
