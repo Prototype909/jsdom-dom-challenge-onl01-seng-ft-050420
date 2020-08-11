@@ -33,3 +33,9 @@ function pauseCounter() {
         pauseButton.innerText = 'pause';
     }
 };
+
+function toggleButtons() {
+    minusButton.disabled = !minusButton.disabled;
+    plusButton.disabled = !plusButton.disabled;
+    heartButton.disabled = !heartButton.disabled;
+};
