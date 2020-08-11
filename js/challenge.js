@@ -17,6 +17,19 @@ function decrementCounter() {
 
 function incrementCounter() {
     let result = parseInt(counter.innerText);
-    result++;
-    counter.innerText = result;
+    result++; 
+    counter.innerText = result; 
+};
+
+function pauseCounter() {
+    if (pauseButton.innerText === 'pause') {
+        clearInterval(timer);
+        toggleButtons()
+        pauseButton.innerText = 'resume';
+    }
+    else {
+        timer = setInterval(incrementCounter, 1000);
+        toggleButtons()
+        pauseButton.innerText = 'pause';
+    }
 };
